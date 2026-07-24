@@ -9,13 +9,13 @@
  */
 
 // TODO(backend): set the real base URL, e.g. via import.meta.env.VITE_API_URL
-export const API_BASE_URL = "http://127.0.0.1:8000";
+export const API_BASE_URL = "https://emotionsense-api.onrender.com";
 
 export const ENDPOINTS = {
   // TODO(backend): POST { text: string } -> { emotion, confidence, scores[] }
   predictText: `${API_BASE_URL}/predict`,
   // TODO(backend): POST multipart/form-data { file: csv } -> { jobId }
-  predictDataset: `${API_BASE_URL}/predict/dataset`,
+  predictDataset: `${API_BASE_URL}/predict-dataset`,
   // TODO(backend): GET ?jobId= -> { status, progress, resultUrl }
   datasetJobStatus: `${API_BASE_URL}/predict/dataset/status`,
   // TODO(backend): GET -> { totalPredictions, classDistribution[], confidenceTrend[] }
@@ -64,7 +64,7 @@ export async function predictDataset(file) {
   formData.append("file", file);
 
   const response = await fetch(
-    "http://127.0.0.1:8000/predict-dataset",
+    ENDPOINTS.predictDataset,
     {
       method: "POST",
       body: formData,
