@@ -1,5 +1,19 @@
 import string
 from nltk.stem import WordNetLemmatizer
+import nltk
+
+try:
+    nltk.data.find("corpora/wordnet")
+except LookupError:
+    nltk.download("wordnet")
+    nltk.download("omw-1.4")
+import nltk
+
+try:
+    nltk.data.find("corpora/wordnet")
+except LookupError:
+    nltk.download("wordnet")
+    nltk.download("omw-1.4")
 
 lemmatizer = WordNetLemmatizer()
 
