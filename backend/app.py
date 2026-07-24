@@ -9,15 +9,13 @@ from fastapi.responses import JSONResponse
 from preprocessing import preprocess
 
 app = FastAPI()
+
 app.add_middleware(
     CORSMiddleware,
-    app.add_middleware(
-        CORSMiddleware,
-        allow_origins=["*"],
-        allow_credentials=False,
-        allow_methods=["*"],
-        allow_headers=["*"],
-    )
+    allow_origins=["*"],
+   allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 model = pickle.load(open("emotion_model.pkl", "rb"))
 vectorizer = pickle.load(open("tfidf_vectorizer.pkl", "rb"))
