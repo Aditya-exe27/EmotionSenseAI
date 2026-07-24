@@ -16,6 +16,11 @@ An AI-powered Emotion Analysis web application that predicts emotions from text 
 
 ---
 
+Live App: https://emotion-sense-92wohzzaq-aditya-exe27s-projects.vercel.app/
+API Docs: https://emotionsense-api.onrender.com/docs
+
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
