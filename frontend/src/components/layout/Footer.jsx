@@ -60,8 +60,8 @@ export default function Footer() {
         <div className="mt-12">
           <SpectrumBar thin animated={false} />
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-6 text-xs text-muted font-mono">
-            <span>© {new Date().getFullYear()} EmotionSense AI. Portfolio project.</span>
-            <span>Frontend-only build · Backend integration pending</span>
+            <span>© {new Date().getFullYear()} EmotionSense AI project.</span>
+            <span>Powered by React · FastAPI · Scikit-learn</span>
           </div>
         </div>
       </div>

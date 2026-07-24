@@ -165,10 +165,9 @@ export default function About() {
             What's next
           </h3>
           <p className="text-sm text-muted leading-relaxed max-w-xl mx-auto">
-            This build is intentionally frontend-only. The next milestone is
-            connecting a live inference service to <code className="font-mono text-brand-cyan">src/lib/api.js</code>,
-            followed by iterative model retraining and optimization as more
-            labeled data becomes available.
+            EmotionSense AI will continue evolving with improved machine learning models, 
+            real-time analytics, enhanced visualization, 
+            and support for additional languages and emotion categories.
           </p>
         </GlassCard>
       </div>
